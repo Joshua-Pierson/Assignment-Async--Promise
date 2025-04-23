@@ -30,8 +30,10 @@ const books = [
     }
 ];
 
-let goodRead = "";
-let bookCover = 0; bookCover < books.length; bookCover++;
+// Attempt working code 
+
+//let goodRead = "";
+
     //for (let bookCover = 0; bookCover < books.length; bookCover++) {
         //goodRead +="<li>";
 
@@ -45,6 +47,10 @@ let bookCover = 0; bookCover < books.length; bookCover++;
 
 //document.getElementById("bookList").innerHTML = goodRead;
 
+
+
+
+// Attempt with Promise
 
 // Simulate fetching books with a delay using a Promise
 function fetchBooks() {
