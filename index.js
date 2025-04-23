@@ -62,17 +62,16 @@ function fetchBooks() {
 }
 
 fetchBooks().then(bookArray=>{
+    let goodRead = "";
+    
+    bookArray.forEach(book => {
+        goodRead += `<h1> ${book["title"]} </h1>`;
+        goodRead += `<p> ${book["author"]} </p>`;
+        goodRead += `<img src = "${book["image"]}" />`;
+    });
+
     document.getElementById("bookList").innerHTML = goodRead;
-
-    bookArray.forEach (book =>{
-        goodRead+= `<h1> ${books[bookCover].title} </h1>`;
-        goodRead += `<p> ${books[bookCover].author} </p>`;
-        goodRead += `<img src = "${books[bookCover].image}" />`;
 });
-
-});
-
-
   
  
   
